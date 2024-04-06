@@ -124,7 +124,7 @@ extension _CaptureSessionManager {
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
         
         previewLayer.connection?.automaticallyAdjustsVideoMirroring = false
-        previewLayer.connection?.isVideoMirrored = true
+        previewLayer.connection?.isVideoMirrored = false
         
         previewView._SwiftUIX_firstLayer = previewLayer
         
