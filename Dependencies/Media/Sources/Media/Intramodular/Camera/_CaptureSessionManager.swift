@@ -92,7 +92,7 @@ extension _CaptureSessionManager {
             return
         }
         
-        guard let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) ?? AVCaptureDevice.default(for: .video) else {
+        guard let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) ?? AVCaptureDevice.default(for: .video) else {
             #if targetEnvironment(simulator)
             runtimeIssue("This cannot be tested on an iOS simulator.")
             #endif
